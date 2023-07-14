@@ -1,15 +1,11 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-/* more headers goes there */
-
-/* betty style doc for function main goes there */
 /**
- * main - Entry
+ * main - Entry point
  * Description: 'get the last digit of a number'
- * Return: Always 0
+ * Return: Always 0 (Success)
  */
-
 int main(void)
 {
 	int n;
@@ -17,7 +13,6 @@ int main(void)
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	/* your code goes there */
 	ld = n % 10;
 	if (ld > 5)
 	{
@@ -29,7 +24,7 @@ int main(void)
 	}
 	else
 	{
-		printf("Last digit of %d id %d and is less than 6 and not 0\n", n, ld);
+		printf("Last digit of %d id %d and less than 6 and not 0\n", ld);
 	}
 	return (0);
 }
