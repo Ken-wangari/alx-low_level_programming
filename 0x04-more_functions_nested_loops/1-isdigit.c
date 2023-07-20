@@ -1,10 +1,17 @@
 #include "main.h"
+
 /**
- * _isdigi-func checks for a digit (0 thru 9)
- * @c: inter to be checked
- * Return: 1 if c is a digit, 0 otherwise
+ * _isdigit - check if numbers are 0 - 9
+ * @c: char to be checked
+ *
+ * Return: 0 or 1
  */
+
 int _isdigit(int c)
 {
-return (c >= '0' && c <= '9');
+	if (c >= '0' && c <= '9')
+		return (1);
+	else
+		return (0);
 }
+
