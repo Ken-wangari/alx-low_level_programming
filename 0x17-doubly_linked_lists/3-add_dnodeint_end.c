@@ -1,6 +1,5 @@
 #include "lists.h"
-
-dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
+ dlistint_t *add_adnodeint-end(dlistint_t **head, const int n)
 {
 	dlistint_t *h;
 	dlistint_t *new;
@@ -16,8 +15,17 @@ dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 
 	if (h != NULL)
 	{
-		while (h->next != NULL)
-			h = h-->next;
+		while(h->next != NULL)
+			h = h->next;
 		h->next = new;
 	}
+	else
+	{
+		*head = new;
+	}
+
+	new->prev = h;
+
+	return (new);
 }
+
